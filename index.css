@@ -1,0 +1,209 @@
+body{
+    margin: 0;
+    place-items: center;
+    color: rgba(0, 0, 0, 0.87);
+    background-color: #242424;
+    width: 100%;
+}
+main{
+    margin: 0 auto;
+    text-align: center;
+    background-color: #FFFFFF;
+    height: 100vh;
+    position: relative;
+}
+.login{
+    height: 100vh;
+    position: absolute;
+    width: 100vw;
+    background-color: #FFFFFF;
+    z-index: 10;
+}
+.loginBtn{
+    background: #FAFAFA;
+    width: 140px;
+    height: 30px;
+    border-radius: 10px;
+    margin: 40vh auto 0;
+    color: rgba(0, 0, 0,  0.85);
+    z-index: 14;
+}
+.chatPage{
+    width: 100vw;
+    height: 100vh;
+}
+.chatWrapper{
+    height: 87vh;
+    width: 100vw;
+    overflow-y: auto;
+    background-color: #FAFAFA;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.usersPanelWrapper{
+    background-color: #FFFFFF;
+    width: 100vw;
+    color: rgba( #000000, 0.85);
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.modalWrapper{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color:#000000;
+    opacity: 0.8;
+    z-index: 4;
+}
+.modal{
+    width: 40vw;
+    min-height: 70vh;
+    background-color: #FAFAFA;
+    margin: 10vh auto 0;
+    color: rgba( #000000, 0.85);
+    font-size: 18px;
+}
+.usersList{
+    border-bottom: 1px solid rgba( #a1a1a1, 0.8);
+    box-sizing: border-box;
+    padding: 10px 0 10px;
+    min-height: 70vh;
+}
+.user{
+    display: flex;
+    align-items: center;
+    margin: 10px auto 0 ;
+    width: max-content;
+}
+.user img{
+    border-radius: 50%;
+}
+.inputWrapper{
+    width: 100vw;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.userInfo{
+    display: block;
+    max-height: 100px;
+    min-height: 50px;
+    align-items: center;
+}
+.nameLabel{
+    display: block;
+}
+.userInfo img{
+    border-radius: 50%;
+}
+.fileInput{
+    width: 24px;
+    height: 27px;
+    position: relative;
+    cursor: pointer;
+}
+.fileInput :nth-child(n){
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 24px;
+    height: 27px;
+    cursor: pointer;
+}
+.fileInput input{
+    z-index: 3;
+    cursor: pointer;
+    opacity:0
+}
+
+.textInput{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 70vw;
+    min-height: 45px;
+    background-color: #FAFAFA;
+    border: none;
+    border-radius: 12px;
+    color: rgba( #000000, 0.85);
+    text-align: left;
+    word-wrap: break-word;
+    
+}
+.nameLabel{
+    color: #000000;
+}
+.sendBtn{
+    color: #27AE60 ;
+    font-size: 14px;
+}
+
+.messageWrapper{
+    border-radius: 13px;
+    background-color: #F4F4F7;
+    margin: 10px 0 30px;
+    color: rgba(0, 0, 0, 0.85);
+    position: relative;
+    max-width: 60vw;
+    width: max-content;
+    word-wrap: break-word;
+    padding: 8px;
+    display: flex;
+}
+.avatar{
+    position: absolute;
+    left: -30px;
+    border-radius: 50%;
+}
+.userLabel{
+    position: absolute;
+    top: -13px;
+    left: 15px;
+    font-size: 12px;
+    width: max-content;
+}
+.message{
+    font-size: 14px;
+    margin: 0;
+    position: relative;
+    left: 0;
+    text-align: left;
+}
+.myMessage{
+    position: relative;
+    right: 0;
+}
+.my {
+    align-self: flex-end; 
+    margin: 35px 50px 30px 0;
+}
+
+.another {
+    align-self: flex-start; 
+    margin: 35px 0 0 50px;
+}
+
+
+@media screen and (max-width: 650px) {
+    .textInput {
+        width: 50vw;
+    }
+    span .nameLabel {
+        display: none;
+    }
+    .userInfo img{
+        margin: 10px 0 0 0;
+        
+    }
+}
+
+@media screen and (width < 700px) {
+    .modal {
+        width: 60vw;
+    }
+}

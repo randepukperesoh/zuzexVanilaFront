@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.socket.io/socket.io-3.0.1.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="login">
+            <button class="loginBtn">Войти</button>
+        </div>
+        <div class="chatPage">
+            <div class="usersPanelWrapper">
+                <div>В комнате <span></span> пользователей</div>
+                <img src="./assets/Vector.svg" alt="">
+            </div>
+            <div class="chatWrapper">
+
+            </div>
+            <div class='inputWrapper'>
+                <div class='userInfo'>
+                    
+                </div>
+                <div class='fileInput'>
+                    <input type="file"/>
+                    <img width={24} src='./assets/Fill.svg'/>
+                </div>
+                
+                <input class='textInput' type="textbox" placeholder="Введите сообщение"/>
+                <button class='sendBtn'> Send </button>
+            </div>
+        </div>
+    </main>
+</body>
+<script type="module" src="./index.js"></script>
+</html>
