@@ -18,7 +18,6 @@ socket.on('getDefaultValues', (data) => {
     data.users.forEach(user => {
         users.push(user)
     });
-    console.log(users)
     messages.push(...data.messages);
     modal(users)
     const event = new CustomEvent('getDefaultValues');
